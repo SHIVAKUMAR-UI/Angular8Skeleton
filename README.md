@@ -15,7 +15,7 @@ This project is to give a basic idea how to setup an angular application from sc
 * ToastrModule 
 * Angular 8 Lazy loading 
 * OAuth Service integration 
-* Proxy for secure calls and to fix Cors issue 
+* Proxy for secure calls and to fix CORS issue 
 * Material Table 
 * HttpClient 
 * D3 Charts 
