@@ -2,7 +2,7 @@
 Angular 8 project setup from scratch
 
 
-This project is to give a basic idea how to setup an angular application from scratch.
+This project is to give a basic idea how to setup an angular application from scratch for intermediate Angular developers
 
 # Below are the features included:
 
