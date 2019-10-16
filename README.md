@@ -25,3 +25,4 @@ This project is to give a basic idea how to setup an angular application from sc
 * Interceptors 
 * FileSaver 
 * Tabs Directive
+* Loading-Spinner Directive
