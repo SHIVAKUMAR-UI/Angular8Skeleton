@@ -11,6 +11,7 @@ This project is to give a basic idea how to setup an angular application from sc
 * Ngx-permissions 
 * NgbModule from ng-bootstrap 
 * Reactive Forms 
+* Custom Validations
 * Generic Form Elements
 * ToastrModule 
 * Angular 8 Lazy loading 
