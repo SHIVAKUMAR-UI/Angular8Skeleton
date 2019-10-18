@@ -26,3 +26,9 @@ This project is to give a basic idea how to setup an angular application from sc
 * FileSaver 
 * Tabs Directive
 * Loading-Spinner Directive
+
+Download and Run below command (for Oauth Proxy redirection)
+
+$ ng serve --proxy-config proxy.json
+
+This project is to demonstrate the angular concepts, how to utilize the other module and how to implement it in our application. Please ignore the application Style as did not focus on the UI styles.
