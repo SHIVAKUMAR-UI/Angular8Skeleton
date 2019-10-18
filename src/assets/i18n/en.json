@@ -1,0 +1,44 @@
+{
+    "Header": {
+        "Dashboard": "Dashboard",
+        "FET00001": "IMEI Management",
+        "FET00006": "Administrator",
+        "FET00013": "Dashboard",
+        "Approvals": "Approvals",
+        "Registration": "Registration",
+        "VIP_List": "VIP List",
+        "TAC_List": "TAC List"
+    },
+    "Welcome": "Welcome!",
+    "Role": "Role",
+    "RoleTable": {
+        "Name": "Role",
+        "Role_Management": "Role Management",
+        "Role_Name": "Role Name",
+        "No_Role_Found": "No Role Found!",
+        "Description": "Description",
+        "Status": "Status",
+        "Modify_Delete": "Modify / Delete"
+    },
+    "UserTable": {
+        "Name": "User",
+        "User_Management": "Student Management",
+        "User_Name": "User Number",
+        "Email":"Email Id",
+        "Mobile_Number": "Mobile Number",
+        "No_User_Found": "No User Found!",
+        "Description": "Description",
+        "Status": "Status",
+        "Modify_Delete": "Modify / Delete"
+    },
+    "OrgTable": {
+        "Name": "Organization",
+        "Org_Management": "Organization Management",
+        "Org_Name": "Organization Name",
+        "Org_Type": "Organization Type",
+        "No_Org_Found": "No Organization Found!",
+        "Description": "Description",
+        "Status": "Status",
+        "Modify_Delete": "Modify / Delete"
+    }
+}

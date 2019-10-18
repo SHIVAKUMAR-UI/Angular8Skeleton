@@ -1,0 +1,6 @@
+<div [formGroup]="formRef">
+    <textarea type="text" name="{{formControlNm}}" placeholder="{{elementName}}" [formControlName]="formControlNm" > </textarea>
+    <app-error-message *ngIf="elementRef.errors &&
+    (elementRef.invalid && elementRef.touched) || (elementRef.invalid && formRef.submitted)"
+        [formElementReference]="elementRef" [errorTextName]="elementName"></app-error-message>
+    </div>

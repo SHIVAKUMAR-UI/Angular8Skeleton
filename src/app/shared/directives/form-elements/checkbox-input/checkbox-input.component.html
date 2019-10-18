@@ -1,0 +1,8 @@
+<div [formGroup]="formRef" class="col-lg-{{columnsRequired}}">
+        <input type="checkbox" name="{{formControlNm}}" [formControlName]="formControlNm">
+        <label for="{{formControlNm}}">{{elementName}}</label>
+        <br>
+        <app-error-message class="text-danger" *ngIf="elementRef.errors &&
+        (elementRef.invalid && elementRef.touched) || (elementRef.invalid && formRef.submitted) " [formElementReference]="elementRef"
+            [errorTextName]="errorText"></app-error-message>
+    </div>

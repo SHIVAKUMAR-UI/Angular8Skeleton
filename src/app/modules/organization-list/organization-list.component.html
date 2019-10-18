@@ -1,0 +1,42 @@
+<form method="post">
+    <div style="margin-top: 14px;text-align: center;font-size: 30px; font-weight: 500;" *ngIf="!dataSource">
+        <span>{{'OrgTable.No_Org_Found' | translate}}</span>
+    </div>
+    <div class="table-responsive org-table">
+        <div class="mat-elevation-z8">
+            <mat-table *ngIf="dataSource && dataSource.data" matSort [dataSource]="dataSource">
+                <ng-container matColumnDef="orgName">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'OrgTable.Org_Name' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let org"><span class="font-weight-bold">{{org['name']}}</span></mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="orgType">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'OrgTable.Org_Type' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let org">{{org['orgType'] }}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="descripiton">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'OrgTable.Description' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let org">{{org['descripiton']}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="status">
+                    <mat-header-cell *matHeaderCellDef>{{'OrgTable.Status' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let org">{{org.isActive ? 'Active': 'InActive'}}</mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="modifyordelete">
+                    <mat-header-cell *matHeaderCellDef> {{'OrgTable.Modify_Delete' | translate}} </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <button class="btn-icon pointer" type="button" (click)="editOrg(element)"><img
+                                src="assets/images/edit.png" alt="Edit"></button>
+                        <button class="btn-icon pointer" type="button" (click)="editOrg(element)"><img
+                                src="assets/images/delete.png" alt="Delete"></button>
+                    </mat-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+        </div>
+        <mat-paginator [style.display]="(dataSource && dataSource.data.length > eventPageSize)? '': 'none'"
+            (page)="onPaginationChange($event)" [pageIndex]="_pageIndex" [pageSize]="_pageSize"
+            [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+</form>

@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="card card-container" >
+    <div class="login-logo">
+      <img id="profile-img" class="profile-img-card" src="assets/images/login.PNG" />
+    </div>
+    <form [formGroup]="loginForm" class="form-signin" novalidate (ngSubmit)="onClickSubmit()">
+
+    <p id="profile-name" class="profile-name-card">SIGN IN</p>
+    <span id="reauth-email" class="reauth-email"></span>
+    <app-text-input [formRef]="loginForm" [elementClass]="'inputEmail'" [elementRef]="loginForm.get('username')"
+      [elementName]="'User Name'" [formControlNm]="'username'"></app-text-input>
+    <!-- <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> -->
+    <app-password-input [elementClass]="'inputPassword'" [formRef]="loginForm" [elementRef]="loginForm.get('password')"
+      [elementName]="'Password'" [formControlNm]="'password'"></app-password-input>
+    <!-- <input type="password" id="inputPassword" class="form-control" placeholder="Password" required> -->
+    <div></div>
+    <input class="btn btn-lg btn-primary btn-block btn-signin" type="submit" [disabled]="isLoading$" value="SIGN IN">
+    <!-- <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">SIGN IN</button> -->
+    </form><!-- /form -->
+    <a href="#" class="register">
+      New User? Register Now
+    </a>
+    <div class="forgot-pw">
+      <div class="forgot-password">
+        <a routerLink="forgotpassword" class="forgot-password">Forgot password </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+<!-- <app-text-input [formRef]="loginForm" [elementRef]="loginForm.get('imei')" [elementName]="'IMEI'" [formControlNm]="'imei'"></app-text-input>
+  <br />
+  <app-text-input [formRef]="loginForm" [elementRef]="loginForm.get('phoneNumber')" [elementName]="'Phone Number'" [formControlNm]="'phoneNumber'"></app-text-input>
+  <br /> -->
+
+
+<!-- <br />
+<app-upload-file></app-upload-file> -->

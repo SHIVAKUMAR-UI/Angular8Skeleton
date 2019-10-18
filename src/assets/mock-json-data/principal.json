@@ -1,0 +1,794 @@
+{
+    "authorities": [
+        {
+            "authority": "ROLE_USER"
+        }
+    ],
+    "details": {
+        "remoteAddress": "192.168.0.1",
+        "sessionId": null,
+        "tokenValue": "53d8c1f4-01ea-43af-99c8-6b341ebba9d1",
+        "tokenType": "Bearer",
+        "decodedDetails": null
+    },
+    "authenticated": true,
+    "userAuthentication": {
+        "authorities": [
+            {
+                "authority": "ROLE_USER"
+            }
+        ],
+        "details": {
+            "grant_type": "password",
+            "username": "headmaster@school.com"
+        },
+        "authenticated": true,
+        "principal": {
+            "password": "$2a$12$NWB6CCPvzObi8JfFgIrYcetlv0afarpY7Yrwa9MRv6Z24lgY1RiPW",
+            "username": "headmaster@school.com",
+            "authorities": [
+                {
+                    "authority": "ROLE_USER"
+                }
+            ],
+            "accountNonExpired": true,
+            "accountNonLocked": true,
+            "credentialsNonExpired": true,
+            "enabled": true,
+            "userId": 1,
+            "email": "headmaster@school.com",
+            "code": "USR0000000001",
+            "name": null,
+            "firstName": "shiva",
+            "lastName": "kumar",
+            "middleName": "",
+            "gender": "Male",
+            "mobilePhone": null,
+            "homePhone": null,
+            "otherContact": null,
+            "identificationType": null,
+            "identificationNumber": null,
+            "secondaryEmail": null,
+            "addressLine1": null,
+            "addressLine2": null,
+            "city": null,
+            "postCode": null,
+            "tenantCode": "SECONDARY00001",
+            "orgCode": "ORG00001",
+            "orgId": 1,
+            "isSuperOrg": true,
+            "featureList": [
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 6,
+                    "name": "Administration",
+                    "description": "Administration",
+                    "sequence": 1,
+                    "url": "/administrator",
+                    "icon": "user.png",
+                    "parentId": 0,
+                    "code": "FET00006",
+                    "editAccessEnabled": false,
+                    "deleteAccessEnabled": false,
+                    "readAccessEnabled": false,
+                    "childFeatures": [
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 7,
+                            "name": "Student Management",
+                            "description": "Student Management",
+                            "sequence": 1,
+                            "url": "v1/user",
+                            "icon": "",
+                            "parentId": 6,
+                            "code": "FET00007",
+                            "editAccessEnabled": false,
+                            "deleteAccessEnabled": false,
+                            "readAccessEnabled": false,
+                            "childFeatures": [
+                                {
+                                    "version": 0,
+                                    "isActive": false,
+                                    "id": 11,
+                                    "name": "Student List",
+                                    "description": "Student List",
+                                    "sequence": 1,
+                                    "url": "v1/user",
+                                    "icon": "",
+                                    "parentId": 7,
+                                    "code": "FET00011",
+                                    "editAccessEnabled": true,
+                                    "deleteAccessEnabled": true,
+                                    "readAccessEnabled": true
+                                }
+                            ]
+                        },
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 10,
+                            "name": "Role Management",
+                            "description": "Role Management",
+                            "sequence": 2,
+                            "url": "v1/user",
+                            "icon": "",
+                            "parentId": 6,
+                            "code": "FET00010",
+                            "editAccessEnabled": false,
+                            "deleteAccessEnabled": false,
+                            "readAccessEnabled": false,
+                            "childFeatures": [
+                                {
+                                    "version": 0,
+                                    "isActive": false,
+                                    "id": 12,
+                                    "name": "Role List",
+                                    "description": "Role List",
+                                    "sequence": 1,
+                                    "url": "v1/user",
+                                    "icon": "",
+                                    "parentId": 10,
+                                    "code": "FET00012",
+                                    "editAccessEnabled": true,
+                                    "deleteAccessEnabled": true,
+                                    "readAccessEnabled": true
+                                }
+                            ]
+                        },
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 16,
+                            "name": "Organization",
+                            "description": "Organization",
+                            "sequence": 3,
+                            "url": "/organization",
+                            "icon": "",
+                            "parentId": 6,
+                            "code": "FET00014",
+                            "editAccessEnabled": true,
+                            "deleteAccessEnabled": true,
+                            "readAccessEnabled": true
+                        }
+                    ]
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 15,
+                    "name": "Dashboard",
+                    "description": "Dashboard",
+                    "sequence": 0,
+                    "url": "/dashboard",
+                    "icon": "Dashboard.png",
+                    "parentId": 0,
+                    "code": "FET00013",
+                    "editAccessEnabled": true,
+                    "deleteAccessEnabled": true,
+                    "readAccessEnabled": true
+                }
+            ],
+            "featureRawList": [
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 6,
+                    "name": "Administration",
+                    "description": "Administration",
+                    "sequence": 1,
+                    "url": "/administrator",
+                    "icon": "user.png",
+                    "parentId": 0,
+                    "code": "FET00006",
+                    "editAccessEnabled": false,
+                    "deleteAccessEnabled": false,
+                    "readAccessEnabled": false,
+                    "childFeatures": [
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 7,
+                            "name": "Student Management",
+                            "description": "Student Management",
+                            "sequence": 1,
+                            "url": "v1/user",
+                            "icon": "",
+                            "parentId": 6,
+                            "code": "FET00007",
+                            "editAccessEnabled": false,
+                            "deleteAccessEnabled": false,
+                            "readAccessEnabled": false,
+                            "childFeatures": [
+                                {
+                                    "version": 0,
+                                    "isActive": false,
+                                    "id": 11,
+                                    "name": "Student List",
+                                    "description": "Student List",
+                                    "sequence": 1,
+                                    "url": "v1/user",
+                                    "icon": "",
+                                    "parentId": 7,
+                                    "code": "FET00011",
+                                    "editAccessEnabled": true,
+                                    "deleteAccessEnabled": true,
+                                    "readAccessEnabled": true
+                                }
+                            ]
+                        },
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 10,
+                            "name": "Role Management",
+                            "description": "Role Management",
+                            "sequence": 2,
+                            "url": "v1/user",
+                            "icon": "",
+                            "parentId": 6,
+                            "code": "FET00010",
+                            "editAccessEnabled": false,
+                            "deleteAccessEnabled": false,
+                            "readAccessEnabled": false,
+                            "childFeatures": [
+                                {
+                                    "version": 0,
+                                    "isActive": false,
+                                    "id": 12,
+                                    "name": "Role List",
+                                    "description": "Role List",
+                                    "sequence": 1,
+                                    "url": "v1/user",
+                                    "icon": "",
+                                    "parentId": 10,
+                                    "code": "FET00012",
+                                    "editAccessEnabled": true,
+                                    "deleteAccessEnabled": true,
+                                    "readAccessEnabled": true
+                                }
+                            ]
+                        },
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 16,
+                            "name": "Organization",
+                            "description": "Organization",
+                            "sequence": 3,
+                            "url": "/organization",
+                            "icon": "",
+                            "parentId": 6,
+                            "code": "FET00014",
+                            "editAccessEnabled": true,
+                            "deleteAccessEnabled": true,
+                            "readAccessEnabled": true
+                        }
+                    ]
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 7,
+                    "name": "Student Management",
+                    "description": "Student Management",
+                    "sequence": 1,
+                    "url": "v1/user",
+                    "icon": "",
+                    "parentId": 6,
+                    "code": "FET00007",
+                    "editAccessEnabled": false,
+                    "deleteAccessEnabled": false,
+                    "readAccessEnabled": false,
+                    "childFeatures": [
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 11,
+                            "name": "Student List",
+                            "description": "Student List",
+                            "sequence": 1,
+                            "url": "v1/user",
+                            "icon": "",
+                            "parentId": 7,
+                            "code": "FET00011",
+                            "editAccessEnabled": true,
+                            "deleteAccessEnabled": true,
+                            "readAccessEnabled": true
+                        }
+                    ]
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 10,
+                    "name": "Role Management",
+                    "description": "Role Management",
+                    "sequence": 2,
+                    "url": "v1/user",
+                    "icon": "",
+                    "parentId": 6,
+                    "code": "FET00010",
+                    "editAccessEnabled": false,
+                    "deleteAccessEnabled": false,
+                    "readAccessEnabled": false,
+                    "childFeatures": [
+                        {
+                            "version": 0,
+                            "isActive": false,
+                            "id": 12,
+                            "name": "Role List",
+                            "description": "Role List",
+                            "sequence": 1,
+                            "url": "v1/user",
+                            "icon": "",
+                            "parentId": 10,
+                            "code": "FET00012",
+                            "editAccessEnabled": true,
+                            "deleteAccessEnabled": true,
+                            "readAccessEnabled": true
+                        }
+                    ]
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 11,
+                    "name": "Student List",
+                    "description": "Student List",
+                    "sequence": 1,
+                    "url": "v1/user",
+                    "icon": "",
+                    "parentId": 7,
+                    "code": "FET00011",
+                    "editAccessEnabled": true,
+                    "deleteAccessEnabled": true,
+                    "readAccessEnabled": true
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 12,
+                    "name": "Role List",
+                    "description": "Role List",
+                    "sequence": 1,
+                    "url": "v1/user",
+                    "icon": "",
+                    "parentId": 10,
+                    "code": "FET00012",
+                    "editAccessEnabled": true,
+                    "deleteAccessEnabled": true,
+                    "readAccessEnabled": true
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 15,
+                    "name": "Dashboard",
+                    "description": "Dashboard",
+                    "sequence": 0,
+                    "url": "/dashboard",
+                    "icon": "Dashboard.png",
+                    "parentId": 0,
+                    "code": "FET00013",
+                    "editAccessEnabled": true,
+                    "deleteAccessEnabled": true,
+                    "readAccessEnabled": true
+                },
+                {
+                    "version": 0,
+                    "isActive": false,
+                    "id": 16,
+                    "name": "Organization",
+                    "description": "Organization",
+                    "sequence": 3,
+                    "url": "/organization",
+                    "icon": "",
+                    "parentId": 6,
+                    "code": "FET00014",
+                    "editAccessEnabled": true,
+                    "deleteAccessEnabled": true,
+                    "readAccessEnabled": true
+                }
+            ]
+        },
+        "credentials": null,
+        "name": "headmaster@school.com"
+    },
+    "principal": {
+        "password": "$2a$12$NWB6CCPvzObi8JfFgIrYcetlv0afarpY7Yrwa9MRv6Z24lgY1RiPW",
+        "username": "headmaster@school.com",
+        "authorities": [
+            {
+                "authority": "ROLE_USER"
+            }
+        ],
+        "accountNonExpired": true,
+        "accountNonLocked": true,
+        "credentialsNonExpired": true,
+        "enabled": true,
+        "userId": 1,
+        "email": "headmaster@school.com",
+        "code": "USR0000000001",
+        "name": null,
+        "firstName": "Shiva",
+        "lastName": "Kumar",
+        "middleName": "",
+        "gender": "Male",
+        "mobilePhone": null,
+        "homePhone": null,
+        "otherContact": null,
+        "identificationType": null,
+        "identificationNumber": null,
+        "secondaryEmail": null,
+        "addressLine1": null,
+        "addressLine2": null,
+        "city": null,
+        "postCode": null,
+        "tenantCode": "SECONDARY00001",
+        "orgCode": "ORG00001",
+        "orgId": 1,
+        "isSuperOrg": true,
+        "featureList": [
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 6,
+                "name": "Administration",
+                "description": "Administration",
+                "sequence": 1,
+                "url": "/administrator",
+                "icon": "user.png",
+                "parentId": 0,
+                "code": "FET00006",
+                "editAccessEnabled": false,
+                "deleteAccessEnabled": false,
+                "readAccessEnabled": false,
+                "childFeatures": [
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 7,
+                        "name": "Student Management",
+                        "description": "Student Management",
+                        "sequence": 1,
+                        "url": "v1/user",
+                        "icon": "",
+                        "parentId": 6,
+                        "code": "FET00007",
+                        "editAccessEnabled": false,
+                        "deleteAccessEnabled": false,
+                        "readAccessEnabled": false,
+                        "childFeatures": [
+                            {
+                                "version": 0,
+                                "isActive": false,
+                                "id": 11,
+                                "name": "Student List",
+                                "description": "Student List",
+                                "sequence": 1,
+                                "url": "v1/user",
+                                "icon": "",
+                                "parentId": 7,
+                                "code": "FET00011",
+                                "editAccessEnabled": true,
+                                "deleteAccessEnabled": true,
+                                "readAccessEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 10,
+                        "name": "Role Management",
+                        "description": "Role Management",
+                        "sequence": 2,
+                        "url": "v1/user",
+                        "icon": "",
+                        "parentId": 6,
+                        "code": "FET00010",
+                        "editAccessEnabled": false,
+                        "deleteAccessEnabled": false,
+                        "readAccessEnabled": false,
+                        "childFeatures": [
+                            {
+                                "version": 0,
+                                "isActive": false,
+                                "id": 12,
+                                "name": "Role List",
+                                "description": "Role List",
+                                "sequence": 1,
+                                "url": "v1/user",
+                                "icon": "",
+                                "parentId": 10,
+                                "code": "FET00012",
+                                "editAccessEnabled": true,
+                                "deleteAccessEnabled": true,
+                                "readAccessEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 16,
+                        "name": "Organization",
+                        "description": "Organization",
+                        "sequence": 3,
+                        "url": "/organization",
+                        "icon": "",
+                        "parentId": 6,
+                        "code": "FET00014",
+                        "editAccessEnabled": true,
+                        "deleteAccessEnabled": true,
+                        "readAccessEnabled": true
+                    }
+                ]
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 15,
+                "name": "Dashboard",
+                "description": "Dashboard",
+                "sequence": 0,
+                "url": "/dashboard",
+                "icon": "Dashboard.png",
+                "parentId": 0,
+                "code": "FET00013",
+                "editAccessEnabled": true,
+                "deleteAccessEnabled": true,
+                "readAccessEnabled": true
+            }
+        ],
+        "featureRawList": [
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 6,
+                "name": "Administration",
+                "description": "Administration",
+                "sequence": 1,
+                "url": "/administrator",
+                "icon": "user.png",
+                "parentId": 0,
+                "code": "FET00006",
+                "editAccessEnabled": false,
+                "deleteAccessEnabled": false,
+                "readAccessEnabled": false,
+                "childFeatures": [
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 7,
+                        "name": "Student Management",
+                        "description": "Student Management",
+                        "sequence": 1,
+                        "url": "v1/user",
+                        "icon": "",
+                        "parentId": 6,
+                        "code": "FET00007",
+                        "editAccessEnabled": false,
+                        "deleteAccessEnabled": false,
+                        "readAccessEnabled": false,
+                        "childFeatures": [
+                            {
+                                "version": 0,
+                                "isActive": false,
+                                "id": 11,
+                                "name": "Student List",
+                                "description": "Student List",
+                                "sequence": 1,
+                                "url": "v1/user",
+                                "icon": "",
+                                "parentId": 7,
+                                "code": "FET00011",
+                                "editAccessEnabled": true,
+                                "deleteAccessEnabled": true,
+                                "readAccessEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 10,
+                        "name": "Role Management",
+                        "description": "Role Management",
+                        "sequence": 2,
+                        "url": "v1/user",
+                        "icon": "",
+                        "parentId": 6,
+                        "code": "FET00010",
+                        "editAccessEnabled": false,
+                        "deleteAccessEnabled": false,
+                        "readAccessEnabled": false,
+                        "childFeatures": [
+                            {
+                                "version": 0,
+                                "isActive": false,
+                                "id": 12,
+                                "name": "Role List",
+                                "description": "Role List",
+                                "sequence": 1,
+                                "url": "v1/user",
+                                "icon": "",
+                                "parentId": 10,
+                                "code": "FET00012",
+                                "editAccessEnabled": true,
+                                "deleteAccessEnabled": true,
+                                "readAccessEnabled": true
+                            }
+                        ]
+                    },
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 16,
+                        "name": "Organization",
+                        "description": "Organization",
+                        "sequence": 3,
+                        "url": "/organization",
+                        "icon": "",
+                        "parentId": 6,
+                        "code": "FET00014",
+                        "editAccessEnabled": true,
+                        "deleteAccessEnabled": true,
+                        "readAccessEnabled": true
+                    }
+                ]
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 7,
+                "name": "Student Management",
+                "description": "Student Management",
+                "sequence": 1,
+                "url": "v1/user",
+                "icon": "",
+                "parentId": 6,
+                "code": "FET00007",
+                "editAccessEnabled": false,
+                "deleteAccessEnabled": false,
+                "readAccessEnabled": false,
+                "childFeatures": [
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 11,
+                        "name": "Student List",
+                        "description": "Student List",
+                        "sequence": 1,
+                        "url": "v1/user",
+                        "icon": "",
+                        "parentId": 7,
+                        "code": "FET00011",
+                        "editAccessEnabled": true,
+                        "deleteAccessEnabled": true,
+                        "readAccessEnabled": true
+                    }
+                ]
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 10,
+                "name": "Role Management",
+                "description": "Role Management",
+                "sequence": 2,
+                "url": "v1/user",
+                "icon": "",
+                "parentId": 6,
+                "code": "FET00010",
+                "editAccessEnabled": false,
+                "deleteAccessEnabled": false,
+                "readAccessEnabled": false,
+                "childFeatures": [
+                    {
+                        "version": 0,
+                        "isActive": false,
+                        "id": 12,
+                        "name": "Role List",
+                        "description": "Role List",
+                        "sequence": 1,
+                        "url": "v1/user",
+                        "icon": "",
+                        "parentId": 10,
+                        "code": "FET00012",
+                        "editAccessEnabled": true,
+                        "deleteAccessEnabled": true,
+                        "readAccessEnabled": true
+                    }
+                ]
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 11,
+                "name": "Student List",
+                "description": "Student List",
+                "sequence": 1,
+                "url": "v1/user",
+                "icon": "",
+                "parentId": 7,
+                "code": "FET00011",
+                "editAccessEnabled": true,
+                "deleteAccessEnabled": true,
+                "readAccessEnabled": true
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 12,
+                "name": "Role List",
+                "description": "Role List",
+                "sequence": 1,
+                "url": "v1/user",
+                "icon": "",
+                "parentId": 10,
+                "code": "FET00012",
+                "editAccessEnabled": true,
+                "deleteAccessEnabled": true,
+                "readAccessEnabled": true
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 15,
+                "name": "Dashboard",
+                "description": "Dashboard",
+                "sequence": 0,
+                "url": "/dashboard",
+                "icon": "Dashboard.png",
+                "parentId": 0,
+                "code": "FET00013",
+                "editAccessEnabled": true,
+                "deleteAccessEnabled": true,
+                "readAccessEnabled": true
+            },
+            {
+                "version": 0,
+                "isActive": false,
+                "id": 16,
+                "name": "Organization",
+                "description": "Organization",
+                "sequence": 3,
+                "url": "/organization",
+                "icon": "",
+                "parentId": 6,
+                "code": "FET00014",
+                "editAccessEnabled": true,
+                "deleteAccessEnabled": true,
+                "readAccessEnabled": true
+            }
+        ]
+    },
+    "credentials": "",
+    "clientOnly": false,
+    "oauth2Request": {
+        "clientId": "school-mdms-client",
+        "scope": [
+            "read",
+            "write"
+        ],
+        "requestParameters": {
+            "grant_type": "password",
+            "username": "headmaster@school.com"
+        },
+        "resourceIds": [
+            "school-client-service"
+        ],
+        "authorities": [],
+        "approved": true,
+        "refresh": false,
+        "redirectUri": null,
+        "responseTypes": [],
+        "extensions": {},
+        "grantType": "password",
+        "refreshTokenRequest": null
+    },
+    "name": "headmaster@school.com"
+}

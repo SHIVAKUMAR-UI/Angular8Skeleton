@@ -1,0 +1,6 @@
+<span [formGroup]="formRef" class="col-lg-{{columnsRequired}}">
+    <input type="text" [class]="elementClass"  name="{{formControlNm}}" placeholder="{{elementName}}" [formControlName]="formControlNm" >
+    <app-error-message class="text-danger"  *ngIf="elementRef.errors &&
+    (elementRef.invalid && elementRef.touched) || (elementRef.invalid && formRef.submitted)"
+        [formElementReference]="elementRef" [errorTextName]="elementName"></app-error-message>
+</span>

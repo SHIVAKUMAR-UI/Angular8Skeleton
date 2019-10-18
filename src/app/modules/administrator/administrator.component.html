@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-12">
+            <div class="float-right">
+                <input type="text" class="form-control-admin search" placeholder="Search {{selectedTab ? selectedTab.tabCode: ''}}">
+                <button type="button" class="button-add-user pointer" (click)="add()" data-toggle="modal"
+                    data-target="#addUserModal">
+                    Add {{selectedTab ? (selectedTab.tabCode | titlecase) : ''}}
+                </button>
+            </div>
+            <app-tabs (selected)="selectedAdminTab($event.selectedTab)">
+                <app-tab *ngxPermissionsOnly="['FET00007']" tabCode="{{'UserTable.Name' | translate }}" tabTitle="{{'UserTable.User_Management' | translate}}">
+                    <app-user-management></app-user-management>
+                </app-tab>
+                <app-tab *ngxPermissionsOnly="['FET00010']" tabCode="{{'RoleTable.Name' | translate}}" tabTitle="{{'RoleTable.Role_Management' | translate}}">
+                    <app-role-management></app-role-management>
+                </app-tab>
+                <app-tab *ngxPermissionsOnly="['FET00014']" tabCode="{{'OrgTable.Name' | translate}}" tabTitle="{{'OrgTable.Name' | translate}}">
+                    <app-organization-list></app-organization-list>
+                </app-tab>
+            </app-tabs>
+        </div>
+    </div>
+</div>
+
+<!-- <app-user-management></app-user-management> -->

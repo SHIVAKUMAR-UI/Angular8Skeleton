@@ -1,0 +1,90 @@
+[
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 1,
+        "name": "Admin",
+        "code": "ROL00001",
+        "description": "Admin",
+        "isMaster": true,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 30,
+        "name": "Admin Teacher",
+        "code": "ROL00005",
+        "description": "Administrator role for Teacher",
+        "isMaster": false,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 8,
+        "name": "Admin Teacher2",
+        "code": "ROL00003",
+        "description": "Administrator role for Teacher2",
+        "isMaster": true,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 34,
+        "name": "Admin Teacher6",
+        "code": "ROL00008",
+        "description": "Administrator role for Teacher6",
+        "isMaster": false,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 35,
+        "name": "Admin Teacher7",
+        "code": "ROL00009",
+        "description": "Administrator role for Teacher7",
+        "isMaster": false,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 3,
+        "isActive": true,
+        "id": 60,
+        "name": "Admin NCELL",
+        "code": "ROL00012",
+        "description": "Administrator role for NCELL",
+        "isMaster": true,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 1,
+        "isActive": true,
+        "id": 61,
+        "name": "Admin school",
+        "code": "ROL00013",
+        "description": "Administrator role for school",
+        "isMaster": false,
+        "isSuperAdmin": false,
+        "isEditable": true
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 2,
+        "name": "Teacher Admin",
+        "code": "ROL00002",
+        "description": "Administrator for Teacher",
+        "isMaster": true,
+        "isSuperAdmin": false,
+        "isEditable": true
+    }
+]

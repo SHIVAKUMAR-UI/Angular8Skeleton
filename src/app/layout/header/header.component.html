@@ -1,0 +1,85 @@
+<!-- <p *ngIf="isLoggedIn$ | async as isLoggedIn">header works!</p> -->
+<header *ngIf="isLoggedIn$">
+    <!-- Header Top Section Start -->
+    <section class="header-top-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <img class="logo" src="assets/images/logo.jpg" alt="Nepal Telecom Authority">
+                </div>
+                <div class="col-6">
+                    <div class="float-right">
+                        <div class="notification-dropdown float-left">
+                            <div class="dropdown">
+                                <button type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                    <img src="assets/images/notification-bell.png" alt="Nepal Telecom Authority">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" routerLink="/dashboard">Notification 1</a>
+                                    <a class="dropdown-item" routerLink="/dashboard">Notification 2</a>
+                                    <a class="dropdown-item" routerLink="/dashboard">Notification 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-dropdown float-right">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="profile-img"><img src="https://picsum.photos/seed/picsum/200/200"
+                                            alt=""></span>
+                                    Shiva Kumar
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                    x-placement="bottom-start"
+                                    style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 41px, 0px);">
+                                    <a class="dropdown-item" routerLink="/dashboard">My Profile</a>
+                                    <a class="dropdown-item pointer" (click)="onLogout()">Sign Out</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Top Section Start -->
+    <section class="header-nav-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul>
+
+                            
+                            <li routerLinkActive="active" *ngFor="let header of featureList"><a
+                                    [routerLink]="header.url"><img src="assets/images/{{header.icon}}">
+                                    {{'Header.'+header.code | translate}}</a>
+                            </li>
+                            <li routerLinkActive="active" ><a routerLink="/test"><img src="assets/images/mobile.png"> Test </a></li>
+                            <!-- <li routerLinkActive="active" ><a routerLink="/dashboard"><img src="assets/images/mobile.png"> {{'Header.IMEI_Management'| translate}}</a></li>
+                            <li routerLinkActive="active" ><a routerLink='/administrator'><img src="assets/images/user.png"> {{'Header.Administrator'| translate}}</a></li>
+                            <li routerLinkActive="active" ><a routerLink="/dashboard"><img src="assets/images/approvals.png"> {{'Header.Approvals'| translate}}</a></li>
+                            <li routerLinkActive="active" ><a routerLink="/dashboard">{{'Header.Registration'| translate}}</a></li>
+                            <li routerLinkActive="active" ><a routerLink="/dashboard">{{'Header.VIP_List'| translate}}</a></li>
+                            <li routerLinkActive="active" ><a routerLink="/dashboard">{{'Header.TAC_List'| translate}}</a></li> -->
+                        </ul>
+                    </nav>
+                    <div class="settings-dropdown float-right">
+                        <div class="dropdown">
+                            <button type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                <img src="assets/images/settings.png" alt="Nepal Telecom Authority">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" routerLink="/dashboard">Action</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>

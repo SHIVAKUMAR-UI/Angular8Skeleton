@@ -1,0 +1,75 @@
+<div class="modal-content" id="createUserModal" data-dismiss="modal" #createUserModal>
+    <form [formGroup]="userForm" novalidate (ngSubmit)="onClickSubmit(userForm)">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Add User</h5>
+            <button aria-label="Close" class="close" type="button" (click)="closeModal()"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="create-role">
+
+                <div class="custom-control custom-radio">
+                    <app-radio-button [formRef]="userForm" [elementRef]="userForm.get('gender')"
+                    [elementNames]="['male', 'female']" [formControlNm]="'gender'"></app-radio-button>
+                </div>
+                <app-text-input [formRef]="userForm" [elementRef]="userForm.get('firstName')"
+                    [elementName]="'First Name'" [formControlNm]="'firstName'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="userForm" [elementRef]="userForm.get('lastName')" [elementName]="'Last Name'"
+                    [formControlNm]="'lastName'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="userForm" [elementRef]="userForm.get('emailId')" [elementName]="'Email Id'"
+                    [formControlNm]="'emailId'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="userForm" [elementRef]="userForm.get('MobileNumber')"
+                    [elementName]="'Mobile Number'" [formControlNm]="'MobileNumber'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="userForm" [elementRef]="userForm.get('role')" [elementName]="'Role'"
+                    [formControlNm]="'role'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="userForm" [elementRef]="userForm.get('active')" [elementName]="'Active'"
+                    [formControlNm]="'active'"></app-text-input>
+                <br />
+                <div [formGroup]="userForm.get('contactAddress')">
+                    <label>Contact Address</label>
+                    <app-text-input [formRef]="userForm.get('contactAddress')"
+                        [elementRef]="userForm.get('contactAddress').get('address1')" [elementName]="'Address 1'"
+                        [formControlNm]="'address1'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="userForm.get('contactAddress')"
+                        [elementRef]="userForm.get('contactAddress').get('address2')" [elementName]="'Address 2'"
+                        [formControlNm]="'address2'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="userForm.get('contactAddress')"
+                        [elementRef]="userForm.get('contactAddress').get('city')" [elementName]="'City'"
+                        [formControlNm]="'city'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="userForm.get('contactAddress')"
+                        [elementRef]="userForm.get('contactAddress').get('country')" [elementName]="'Country'"
+                        [formControlNm]="'country'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="userForm.get('contactAddress')"
+                        [elementRef]="userForm.get('contactAddress').get('state')" [elementName]="'State'"
+                        [formControlNm]="'state'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="userForm.get('contactAddress')"
+                        [elementRef]="userForm.get('contactAddress').get('zipcode')" [elementName]="'Zip code'"
+                        [formControlNm]="'zipcode'"></app-text-input>
+                    <br />
+                </div>
+                <!-- <app-text-input [formRef]="userForm" [elementRef]="userForm.get('imei')" [elementName]="'IMEI'" [formControlNm]="'imei'"></app-text-input>
+                            <br />
+                            <app-text-input [formRef]="userForm" [elementRef]="userForm.get('phoneNumber')" [elementName]="'Phone Number'" [formControlNm]="'phoneNumber'"></app-text-input>
+                            <br /> -->
+
+                <!-- <br />
+                          <app-upload-file></app-upload-file> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <!-- <button class="btn btn-danger btn-block">Save</button> -->
+            <input type="submit" class="btn btn-danger btn-block" value="OK">
+            <!-- <input type="button" class="btn btn-danger btn-block" (click)="clear(MyForm);" value="Reset" /> -->
+        </div>
+    </form>
+
+</div>

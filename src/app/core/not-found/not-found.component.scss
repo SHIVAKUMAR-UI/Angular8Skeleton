@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Page Not Found Page Css Start*/
+.main-container{ height:calc(100vh - 140px); padding-bottom:0 }
+.main-container > .container-fluid{ height:100% }
+.main-container > .container-fluid > .row{ height:100% }
+.main-container > .container-fluid > .row > div{ height:100% }
+.page-not-found-section{ height:100%; text-align: center; display: flex; align-items: center; justify-content: center }
+.page-not-found-section h2{ font-size:202px; line-height:180px; text-transform: uppercase; font-weight:600; letter-spacing:5px }
+.page-not-found-section p{ font-size:24px; line-height:22px; padding-bottom:28px; margin-bottom:0 }
+.text-center .btn{ margin:0 5px }
+
+
+@media (max-width: 1024px){
+	.page-not-found-section h2{ font-size:140px; line-height:120px }	
+	.page-not-found-section p{ font-size:20px; line-height:22px }	
+}
+@media (min-width: 576px){
+	.modal-dialog{ max-width:580px }
+	.modal-dialog.modal-sm{ max-width:300px }
+	.modal-dialog.modal-lg{ max-width:800px }
+	.modal-dialog.modal-xlg{ max-width:960px }
+}

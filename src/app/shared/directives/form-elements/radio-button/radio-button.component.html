@@ -1,0 +1,6 @@
+<div [formGroup]="formRef">
+    <div *ngFor="let elementName of elementNames">
+        <input [id]="elementName" type="radio" class="custom-control-input" [value]="elementName" [name]="formControlNm" [formControlName]="formControlNm">
+        <label class="custom-control-label" for="{{elementName}}">{{elementName | titlecase}}</label>
+    </div>
+</div>

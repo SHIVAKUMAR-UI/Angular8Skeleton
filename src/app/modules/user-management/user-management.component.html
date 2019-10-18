@@ -1,0 +1,42 @@
+<form method="post">
+    <div style="margin-top: 14px;text-align: center;font-size: 30px; font-weight: 500;" *ngIf="!dataSource">
+        <span>{{'UserTable.No_User_Found' | translate}}</span>
+    </div>
+    <div class="table-responsive user-table">
+        <div class="mat-elevation-z8">
+            <mat-table *ngIf="dataSource && dataSource.data" matSort [dataSource]="dataSource">
+                <ng-container matColumnDef="userName">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'UserTable.User_Name' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let user"><span class="font-weight-bold">{{user['firstName'] + ' ' + user['lastName'] }}</span></mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="email">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'UserTable.Email' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let user">{{user['email'] }}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="mobilePhone">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'UserTable.Mobile_Number' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let user">{{user['mobilePhone']}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="status">
+                    <mat-header-cell mat-sort-header *matHeaderCellDef>{{'UserTable.Status' | translate}}</mat-header-cell>
+                    <mat-cell *matCellDef="let user">{{user.isActive ? 'Active': 'InActive'}}</mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="modifyordelete">
+                    <mat-header-cell *matHeaderCellDef> {{'UserTable.Modify_Delete' | translate}} </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <button class="btn-icon pointer" type="button" (click)="editUser(element)"><img
+                                src="assets/images/edit.png" alt="Edit"></button>
+                        <button class="btn-icon pointer" type="button" (click)="editUser(element)"><img
+                                src="assets/images/delete.png" alt="Delete"></button>
+                    </mat-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+        </div>
+        <mat-paginator [style.display]="(dataSource && dataSource.data.length > eventPageSize)? '': 'none'"
+            (page)="onPaginationChange($event)" [pageIndex]="_pageIndex" [pageSize]="_pageSize"
+            [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+</form>

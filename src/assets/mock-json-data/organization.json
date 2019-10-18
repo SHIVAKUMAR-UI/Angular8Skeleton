@@ -1,0 +1,61 @@
+[
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 4,
+        "name": "LKG",
+        "code": "ORG00003",
+        "description": "Class",
+        "email": "string",
+        "organizationType": {
+            "version": 0,
+            "isActive": false,
+            "name": "Class"
+        },
+        "isSuperOrg": false
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 3,
+        "name": "UKG",
+        "code": "ORG00002",
+        "description": "Class",
+        "email": "string",
+        "organizationType": {
+            "version": 0,
+            "isActive": false,
+            "name": "Class"
+        },
+        "isSuperOrg": false
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 5,
+        "name": "Primary",
+        "code": "ORG00004",
+        "description": "Class",
+        "email": "string",
+        "organizationType": {
+            "version": 0,
+            "isActive": false,
+            "name": "Class"
+        },
+        "isSuperOrg": false
+    },
+    {
+        "version": 0,
+        "isActive": true,
+        "id": 1,
+        "name": "SECONDARY",
+        "code": "ORG00001",
+        "description": "SECONDARY",
+        "organizationType": {
+            "version": 0,
+            "isActive": false,
+            "name": "SECONDARY"
+        },
+        "isSuperOrg": false
+    }
+]

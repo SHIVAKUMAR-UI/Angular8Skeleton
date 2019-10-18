@@ -1,0 +1,1493 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('/assets/css/ubuntufontface.css');
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-UltLtCn.eot');
+    src: url('../fonts/AvenirNextLTPro-UltLtCn.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextLTPro-UltLtCn.woff2') format('woff2'), url('../fonts/AvenirNextLTPro-UltLtCn.woff') format('woff'), url('../fonts/AvenirNextLTPro-UltLtCn.ttf') format('truetype'), url('../fonts/AvenirNextLTPro-UltLtCn.svg#AvenirNextLTPro-UltLtCn') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'), url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'), url('../fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-family: 'Ubuntu', sans-serif;*/
+
+body {
+    font: 400 16px/21px 'Ubuntu', sans-serif;
+    color: #222222;
+    background-color: #f0f0f0
+}
+
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0 0 12px;
+    margin: 0
+}
+
+h1 {
+    font-size: 2.0rem
+}
+
+h2 {
+    font-size: 1.6rem
+}
+
+h3 {
+    font-size: 1.4rem
+}
+
+h4 {
+    font-size: 1.3rem
+}
+
+h5 {
+    font-size: 1.2rem
+}
+
+h6 {
+    font-size: 1rem
+}
+
+p {
+    padding: 0 0 15px;
+    margin: 0
+}
+
+a,
+button,
+button:focus,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none
+}
+
+a {
+    color: #d1102b
+}
+
+a:hover {
+    color: #9d091d
+}
+
+::selection {
+    background: #a23f40;
+    color: #fff;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #a23f40;
+    color: #fff;
+    /* Gecko Browsers */
+}
+
+a,
+.btn,
+button {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+/*Loader Css*/
+
+.spinner {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.6)
+}
+
+.spinner-in {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.spinner-in>div {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+/*Login section Start*/
+
+.login-section {
+    width: 100%;
+    height: 80vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 360px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 60px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px
+}
+
+.login-box form {
+    position: relative;
+    z-index: 9
+}
+
+.login-box #logo {
+    width: auto;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto 30px;
+    float: none
+}
+
+.login-box #logo img {
+    width: 100%;
+    height: auto
+}
+
+.login-box label {
+    color: #fff;
+    background-color: inherit
+}
+
+.login-box a {
+    font-size: 14px;
+    color: #716aca;
+    background-color: inherit
+}
+
+.login-box a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: inherit
+}
+
+
+.login-box .form-control {
+    border: none;
+    border-bottom: 1px solid #ebedf2;
+    padding: 0;
+    font-size: 16px
+}
+
+.login-box .form-control:focus {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+/*HEADER START =========================================================================*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    color: #fff;
+    background-color: #cf112b;
+    padding: 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5)
+}
+
+#logo {
+    width: 256px;
+    display: block;
+    float: left;
+    margin-bottom: 8px;
+    margin-top: 8px
+}
+
+#logo img {
+    width: 100%;
+    height: auto
+}
+
+.logo-text {
+    font-size: 18px;
+    line-height: 16px;
+    padding: 19px 0 0 10px;
+    margin: 0;
+    display: inline-block
+}
+
+.terminal-info {
+    font-size: 14px
+}
+
+.time-text {
+    display: block;
+    font-size: 18px;
+    line-height: 18px
+}
+
+.cash-drawer-amount {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cash-drawer-amount span {
+    font-size: 18px;
+    display: block
+}
+
+.c-name {
+    font-size: 18px;
+    display: block
+}
+
+header p {
+    padding: 0;
+    margin: 0
+}
+
+.main-container {
+    height: calc(100% - 140px);
+    padding: 92px 0 78px;
+    position: relative;
+    z-index: 1
+}
+
+.main-container.inner {
+    height: calc(100% - 190px);
+    padding: 147px 0 78px;
+    position: relative;
+    z-index: 1
+}
+
+/*LEFT PANNEL START ==================================================================*/
+
+.left-pann {
+    width: 100%;
+    overflow-y: auto;
+    padding: 18px 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3)
+}
+
+.search-box {
+    position: relative
+}
+
+.search-box .form-control {
+    width: 100%;
+    border: 1px solid #979797;
+    padding: 0 60px 0 20px;
+    color: #9b9b9b;
+    background-color: #f8f8f8;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px
+}
+
+.btn-submit {
+    width: 32px;
+    height: auto;
+    padding: 0;
+    background: url('../img/search-icon.png') no-repeat 0 0;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    border: none;
+    cursor: pointer
+}
+
+.btn-submit:hover {
+    background: url('../img/search-icon-hover.png') no-repeat 0 0;
+    background-size: 100%
+}
+
+.btn-submit.focus {
+    border: none;
+    outline: inherit;
+    background: url('../img/search-icon-hover.png') no-repeat 0 0;
+    background-size: 100%
+}
+
+.quantity-wrapper {
+    text-align: center
+}
+
+.quantity-wrapper .btn {
+    display: inline-block;
+    vertical-align: top
+}
+
+.quantity-box {
+    width: 60px;
+    display: inline-block;
+    margin: 0 8px
+}
+
+.quantity-box input.form-control {
+    width: 100% !important;
+    height: 24px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    padding: 0 5px;
+    border: none; background-color: inherit;
+    border-bottom:1px solid #bdbcbc;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0
+}
+
+.quantity-box span {
+    text-align: center;
+    font-size: 14px
+}
+
+.btn-remove,
+.btn-add,
+.btn-delete {
+    font-family: Avenir Next LT Pro;
+    margin-top: 4px !important
+}
+
+.delete-text {
+    font-size: 14px;
+    display: block
+}
+
+.table-item tbody tr td {
+    padding: 0
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1)
+}
+
+/*ASIDE SATRT =============================================================================================*/
+
+aside .card {
+    width: 100%;
+    padding:10px;
+    margin: 0 0 9px;
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px
+}
+
+aside table.table {
+    min-height: 26px;
+    margin-bottom: 0
+}
+
+aside table.table th,
+aside table.table td {
+    border-top: inherit;
+    padding:2px 0px !important;
+    color: #010101
+}
+
+.item-list th {
+    font-size: 21px
+}
+
+.item-price-info th,
+.item-price-info td {
+    font-size: 17px
+}
+
+aside .table tfoot {
+    border-top: 1px solid #d6d6d6;
+    padding: 15px 0 0
+}
+
+aside .table tfoot th {
+    font-weight: 500;
+    color: #010101
+}
+
+aside .table tfoot td {
+    font-weight: 500
+}
+
+.payment-option th,
+.payment-option td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px
+}
+
+aside .card.pay-balance-info {
+    padding: 0 15px;
+    margin: 0 0 14px;
+    background-color: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border: inherit;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px
+}
+
+aside .card.pay-balance-info .table {
+    background-color: transparent
+}
+
+aside .card.pay-balance-info .table tr,
+aside .card.pay-balance-info .table th {
+    font-size: 20px;
+    line-height: 24px;
+    background-color: transparent
+}
+
+.pay-balance {
+    font-size: 30px;  line-height: 24px;
+}
+
+.change-balance {
+    font-size: 22px;  line-height: 24px;
+}
+
+.add-customer-box {
+    padding: 0 10px 10px
+}
+
+.add-customer-box .row>div {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+aside .card a {
+    color: #000
+}
+
+aside .card a:hover {
+    color: #666
+}
+
+/*FOOTER START =================================================================*/
+
+footer {
+    width: 100%;
+    padding: 8px 0;
+    background-color: #d1112a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9
+}
+
+footer .btn-lg {
+    padding: 0;
+    margin: 0;
+    height: 52px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400
+}
+
+footer .btn span {
+    display: block
+}
+
+.btn-print {
+    font-size: 20px !important
+}
+
+.btn-print span {
+    font-size: 14px !important
+}
+
+/*Table Custom Css ==============================================================================*/
+
+.table thead th {
+    border-top: inherit;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #aaa;
+    background-color: inherit
+}
+
+.table tbody tr {
+    color: #000;
+    background-color: #fff
+}
+
+.table-item .table-striped tbody tr:nth-of-type(odd) {
+    color: #000;
+    background-color: inherit
+}
+
+.table tbody tr.info-tr th,
+.table tbody tr.info-tr td {
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+
+.table tbody tr th,
+.table tbody tr td {
+    font-weight: 500;
+    color: #000
+}
+
+.table-item .table thead th {
+    border-bottom: none
+}
+
+.table-item .card {
+    margin-bottom: 8px
+}
+
+.table-item .card-header {
+    padding: 0;
+    margin: 0
+}
+
+.table-item .card-header .table[aria-expanded="true"] {
+    padding: 0;
+    margin: 0;
+    background-color: #fff
+}
+
+.table-item .card-header .table[aria-expanded="false"] {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5
+}
+
+.table-item .card-header td {
+    padding: .95rem .75rem;
+    font-size: 18px;
+    word-break: break-all
+}
+
+.table-item .card-body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0
+}
+
+.table-item .card-body .table {
+    padding: 0;
+    margin: 0
+}
+
+.table-item .card-body td {
+    padding: .75rem;
+    background-color: #fff
+}
+
+.table-item ol {
+    margin-bottom: 5px
+}
+
+.table-item ol li {
+    font-size: 15px;
+    line-height: 15px
+}
+
+.table td,
+.table th {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.table-item .card-header td {
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+    font-size: 16px
+}
+
+.table-light tbody th,
+.table-light tbody td {
+    background-color: #dfdfdf;
+    border-top: 1px solid #fff
+}
+
+.table tbody tr:focus th,
+table tbody tr:focus td {
+    background-color: #dadada
+}
+.table td, .table th{ padding: 6px .75rem !important }
+
+/*CARD CUSTOM STYLE ------------------------------------------------------------------------------------*/
+
+.invoice .card-header {
+    color: #fff;
+    background-color: #c30022
+}
+
+.card-header h5.card-title {
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+/*Form Element =======================================================================================*/
+
+.form-control {
+    height: 38px;
+    line-height: 36px;
+    color: #797979;
+    background-color: #fff;
+    font-size: 15px;
+    border: 1px solid #eaeaea;
+    padding: 0 15px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px
+}
+
+.form-control-lg {
+    font-size: 20px;
+    line-height: 52px;
+    height: 54px;
+}
+
+.form-control-sm {
+    font-size: 16px;
+    line-height: 30px;
+    height: 32px;
+}
+
+select.form-control,
+select {
+    font-size: 15px;
+    padding: 0 20px 0 12px;
+    background: url(../img/select-arrow-gray.png) no-repeat right center #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+select.selectDiscount {
+    font-size: 12px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px
+}
+
+select.form-control:focus,
+select:focus {
+    background: url(../img/select-arrow-gray.png) no-repeat right center #fff
+}
+
+header select.form-control:focus,
+header select:focus {
+    background: url(../img/select-arrow-gray.png) no-repeat right center;
+    outline: none
+}
+
+select.form-control::-ms-expand,
+select::-ms-expand {
+    display: none
+}
+
+.form-control.datepicker {
+    background: url('../img/calendar-icon.png') no-repeat right center;
+    background-size: 30px
+}
+
+/*BUTTON CUSTOM STYLE ====================================================================================*/
+
+.btn {
+    height: 36px;
+    line-height: 34px;
+    padding: 0 10px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important
+}
+
+.btn-circle {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%
+}
+
+.btn-secondary {
+    background-color: #d8d8d8;
+    color: #000;
+    border-color: #d8d8d8
+}
+
+.btn-secondary:hover {
+    background-color: #cf0220;
+    color: #fff;
+    border-color: #cf0220
+}
+
+.btn-outline-primary {
+    height: 35px;
+    line-height: 33px;
+    min-width: 122px;
+    color: #030303;
+    background-color: #fff;
+    border-color: #969696;
+    text-align: center;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #d0001c;
+    border-color: #d0001c
+}
+
+.btn-primary {
+    color: #0c0c0c;
+    background-color: #d8d8d8;
+    border: inherit;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+
+
+footer .btn-primary {
+    border: 1px solid #ffe6f3;
+    -webkit-box-shadow: #666 0px 0px 4px;
+    -moz-box-shadow: #666 0px 0px 4px;
+    box-shadow: #666 0px 0px 4px
+}
+
+footer .btn:hover {
+    border: 1px solid #fff !important
+}
+
+.text-center.btn-block .btn {
+    margin: 0 7px
+}
+
+.btn-success {
+    color: #000700;
+    background-color: #b9e986;
+    border: 1px solid #b9e986;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: #666 0px 0px 4px;
+    -moz-box-shadow: #666 0px 0px 4px;
+    box-shadow: #666 0px 0px 4px;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus {
+    color: #fff;
+    background-color: #84bd48;
+    border: 1px solid #84bd48
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    font-size: 18px;
+    height: 44px;
+    line-height: 42px;
+    padding: 0 25px
+}
+
+.btn-group-lg>.btn,
+.btn-sm {
+    font-size: 14px;
+    height: 32px;
+    line-height: 30px
+}
+
+.btn-group-lg>.btn,
+.btn-xs {
+    font-size: 12px;
+    height: 38px;
+    line-height: 26px
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #f9002c;
+    border-color: #c30021
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.2)
+}
+
+
+
+.float-right .btn {
+    margin-left: 5px
+}
+
+.float-right .btn:first-child {
+    margin-left: 0px
+}
+
+.float-left .btn {
+    margin-right: 5px
+}
+
+.float-left .btn:last-child {
+    margin-right: 0px
+}
+
+.btn-link {
+    cursor: pointer
+}
+
+button.btn-link {
+    box-shadow: inherit;
+    border: none;
+    color: #999;
+    cursor: pointer
+}
+
+button.btn-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+    color: #c30021
+}
+
+/*UL & OL CUSTOM STYLE ====================================================================================*/
+
+ol {
+    padding: 0;
+    margin: 0 0 15px
+}
+
+ol li {
+    padding: 0 0 3px;
+    list-style-position: inside
+}
+
+/*DROPDOWN CUSTOMIZATION ============================================================*/
+
+.name-dropdown a {
+    font-size: 17px;
+    line-height: 14px
+}
+
+.name-dropdown .dropdown-toggle:after {
+    border-left: .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-top: .5em solid;
+    margin-left: 15px;
+    position: relative;
+    top: 3px
+}
+
+.name-dropdown .dropdown-menu {
+    padding: 0;
+    top: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 0px 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+}
+
+.name-dropdown .dropdown-menu.show {
+    top: 34px !important
+}
+
+.name-dropdown .dropdown-menu:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -5px;
+    right: 9px;
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff
+}
+
+.name-dropdown .dropdown-menu a {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    background-color: inherit;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.name-dropdown .dropdown-menu a:hover {
+    color: #2c2c2c;
+    background-color: #ededed
+}
+
+/*BORDER STYLE ====================================================================*/
+
+.no-border {
+    border: inherit !important
+}
+
+.no-top-border {
+    border-top: inherit !important
+}
+
+.no-bottom-border {
+    border-bottom: inherit !important
+}
+
+.no-left-border {
+    border-left: inherit !important
+}
+
+.no-right-border {
+    border-right: inherit !important
+}
+
+/*MODAL BOX CUSTOM STYLE*/
+
+.modal-content {
+    border: inherit !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important
+}
+
+.modal-header {
+    padding: 8px 15px !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important
+}
+
+.modal-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: inherit
+}
+
+.close {
+    color: #fff;
+    font-weight: 400;
+    opacity: 1
+}
+
+.close:hover {
+    opacity: 0.6
+}
+
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    color: #fff
+}
+
+.modal .table td,
+.modal .table th {
+    padding: 8px 5px
+}
+
+.modal .form-group {
+    margin-bottom: 15px
+}
+
+.modal-footer {
+    border: none;
+    padding-top: 0
+}
+
+.modal-backdrop.show {
+    opacity: 0.7 !important
+}
+
+.modal-footer .btn {
+    min-width: 110px
+}
+
+.modal-footer .table tr {
+    background-color: transparent
+}
+
+/*RETURN MODAL BOX STYLE ********************************************/
+
+.returnModal .btn-submit {
+    width: 26px;
+    height: 26px;
+    top: 9px
+}
+
+.returnModal .search-box .form-control {
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 40px
+}
+
+.returnModal .custom-control-label:before {
+    top: -7px
+}
+
+.returnModal .custom-control-label:after {
+    top: -6px
+}
+
+.returnModal .btn-circle {
+    width: 26px;
+    height: 26px;
+    margin: 0 !important;
+    line-height: 24px
+}
+
+.returnModal .quantity-wrapper {
+    text-align: left
+}
+
+.returnModal .quantity-box {
+    width: 36px;
+    height: 26px;
+    margin: 0 2px
+}
+
+.returnModal .quantity-box input.form-control {
+    height: 26px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px
+}
+
+/*Transaction Search page Css Start --------------------------------------------*/
+
+.transaction-search {
+    padding: 30px 25px;
+    border: 1px solid #a9a9a9
+}
+
+.transaction-search h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #898989;
+    background-color: inherit
+}
+
+.transaction-search h3 {
+    font-size: 1rem;
+    font-weight: 600
+}
+
+.transaction-search .btn-submit {
+    width: 26px;
+    height: 26px;
+    top: 9px
+}
+
+.transaction-list {
+    max-height: calc(100vh - 205px)
+}
+
+/*Cash Withdraw Modal Css Start*/
+
+.cashWithdrawModal .table td,
+.cashWithdrawModal .table th {
+    vertical-align: middle;
+}
+
+.cashWithdrawModal .modal-footer .table {
+    margin-bottom: 0
+}
+
+.cashWithdrawModal .modal-footer .table {
+    font-size: 20px
+}
+
+.cashWithdrawModal .modal-footer {
+    padding: 12px 1rem;
+}
+
+/*Background color customize Css start*/
+
+.bg-light {
+    background-color: #e7e7e7 !important
+}
+
+/*Datepicker Dropdown Css*/
+
+.datepicker.datepicker-dropdown {
+    width: 230px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2)
+}
+
+.datepicker table {
+    width: 100%
+}
+
+.datepicker table thead {
+    background-color: #c30021
+}
+
+.datepicker table thead th {
+    font-size: 13px;
+    background-color: transparent !important;
+    color: #fff
+}
+
+.datepicker table tbody td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12.5px
+}
+
+.datepicker td,
+.datepicker th {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px
+}
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled] {
+    background-color: #c30021 !important;
+    background-image: none
+}
+
+/*Header Nav Section Start*/
+
+.top-nav {
+    background-color: #fff;
+    padding: 15px 0
+}
+
+.top-nav ul {
+    padding: 0;
+    margin: 0
+}
+
+.top-nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0 22px 0 0;
+    margin: 0;
+    font-size: 15px
+}
+
+.top-nav ul li svg {
+    font-size: 18px;
+    margin-right: 3px
+}
+
+.top-nav ul li:last-child {
+    padding-right: 0
+}
+
+.top-nav ul li a {
+    color: #919191
+}
+
+.top-nav ul li a:hover,
+.top-nav ul li a.active {
+    color: #6b6b6b
+}
+
+/*Custom Radio & Checkbox Style ----------------------------------*/
+
+.custom-checkbox .custom-control-label:before {
+    background-color: #fff;
+    border: 1px solid #b7b7b7;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label:before {
+    background-color: #c30021
+}
+
+.custom-control-input:checked~.custom-control-label:before {
+    background-color: #c30021
+}
+
+.custom-control-input:focus~.custom-control-label:before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #ffc8d1
+}
+
+/* Row with equal height columns */
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+/*Transition Css*/
+
+a,
+.form-control,
+.btn,
+input {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+@media(max-width:1280px) {
+    /*Left pannel CSs -----------*/
+    .btn-circle {
+        width: 32px;
+        height: 32px;
+        line-height: 30px
+    }
+    .quantity-box {
+        width: 55px;
+        margin: 0 5px
+    }
+    .quantity-box .form-control {
+        padding: 0 6px
+    }
+    .quantity-box span {
+        font-size: 13px
+    }
+    /*Aside Pannel Css -------*/
+    aside .card {
+        padding: 5px 8px 
+    }
+    .card.payment-option .btn-outline-primary {
+        min-width: inherit;
+        width: 100%;
+        display: block
+    }
+    .item-list th,
+    .item-price-info th,
+    .item-price-info td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px
+    }
+    .payment-option th,
+    .payment-option td {
+        font-size: 15px
+    }
+    .btn-outline-primary {
+        font-size: 14px
+    }
+}
+
+@media(max-width:1024px) {
+    /*Footer Css -----------------*/
+    footer .btn-lg {
+        /* height: 46px;
+        line-height: 44px;
+        font-size: 16px */
+    }
+    .main-container {
+        height: calc(100% - 135px);
+        padding: 85px 0 72px;
+        position: relative;
+        z-index: 1
+    }
+    /*Left Pannel Css*/
+    .left-pann {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .table-item .card-body td {
+        font-size: 13px
+    }
+    .search-box .form-control {
+        height: 50px;
+        line-height: 48px
+    }
+    .btn-submit {
+        width: 32px;
+        height: 32px;
+        background-size: 100%;
+        top: 14px
+    }
+    .table-item .card-header td,
+    .table thead th {
+        font-size: 14px;
+        padding-left: .35rem;
+        padding-right: .35rem
+    }
+    .search-box .form-control {
+        font-size: 18px
+    }
+    .quantity-box {
+        width: 36px;
+        height: 32px;
+        margin: 0 2px
+    }
+    .quantity-box input.form-control {
+        height: 32px;
+        padding: 0 2px;
+        font-size: 13px
+    }
+    .quantity-box span {
+        display: none
+    }
+    .btn-remove,
+    .btn-add,
+    .btn-delete {
+        margin-top: 0px !important
+    }
+    .table-item ol li {
+        font-size: 14px
+    }
+    /*Aside Pannel Css -------*/
+    aside .card.pay-balance-info .table tr,
+    aside .card.pay-balance-info .table th {
+        font-size: 16px
+    }
+    .pay-balance,
+    .change-balance {
+        font-size: 22px
+    }
+    aside .card.pay-balance-info .table th,
+    aside .card.pay-balance-info .table td {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        vertical-align: middle
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 580px
+    }
+    .modal-dialog.modal-sm {
+        max-width: 300px
+    }
+    .modal-dialog.modal-lg {
+        max-width: 800px
+    }
+    .modal-dialog.modal-xlg {
+        max-width: 960px
+    }
+}
+
+.validation-error {
+    color: red;
+    font-size: 13px
+}
+
+.mat-form-field-infix {
+    width: 135px !important;
+}
+
+.link-styled-button {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    cursor: pointer;
+    width: auto;
+}

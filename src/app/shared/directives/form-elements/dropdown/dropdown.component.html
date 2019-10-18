@@ -1,0 +1,10 @@
+<div [formGroup]="formRef" class="col-lg-{{columnsRequired}}">
+        <label for="{{formControlNm}}">{{elementName}}</label>
+        <select name="{{formControlNm}}" [formControlName]="formControlNm">
+            <option *ngFor="let option_ of selectList" value="option_.value">{{option_.name}}</option>
+        </select>
+    
+        <app-error-message *ngIf="elementRef.errors &&
+        (elementRef.invalid && elementRef.touched) || (elementRef.invalid && formRef.submitted)"
+            [formElementReference]="elementRef" [errorTextName]="elementName"></app-error-message>
+    </div>

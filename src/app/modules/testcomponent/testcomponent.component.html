@@ -1,0 +1,17 @@
+<p >
+  <app-barchart *ngIf="chartData" [data]="chartData"></app-barchart>
+  <!-- <app-miserables></app-miserables> -->
+</p>
+<p  >
+  <app-tabs (selected)="log($event.selectedTab)">
+    <app-tab [tabTitle]="'Title 1'">
+      Content 1
+    </app-tab>
+    <app-tab tabTitle="Title 2">
+      Content 2
+    </app-tab>
+    <app-tab [tabTitle]="'Title 3'">
+      Content 3
+    </app-tab>
+  </app-tabs>  
+</p>

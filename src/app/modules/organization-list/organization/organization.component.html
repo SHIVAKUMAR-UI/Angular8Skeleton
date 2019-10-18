@@ -1,0 +1,75 @@
+<div class="modal-content" id="createOrgModal" data-dismiss="modal" #createOrgModal>
+    <form [formGroup]="orgForm" novalidate (ngSubmit)="onClickSubmit(orgForm)">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Add Role</h5>
+            <button aria-label="Close" class="close" type="button" (click)="closeModal()"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="create-role">
+
+                <div class="custom-control custom-radio">
+                    <app-radio-button [formRef]="orgForm" [elementRef]="orgForm.get('gender')"
+                    [elementNames]="['male', 'female']" [formControlNm]="'gender'"></app-radio-button>
+                </div>
+                <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('firstName')"
+                    [elementName]="'First Name'" [formControlNm]="'firstName'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('lastName')" [elementName]="'Last Name'"
+                    [formControlNm]="'lastName'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('emailId')" [elementName]="'Email Id'"
+                    [formControlNm]="'emailId'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('MobileNumber')"
+                    [elementName]="'Mobile Number'" [formControlNm]="'MobileNumber'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('role')" [elementName]="'Role'"
+                    [formControlNm]="'role'"></app-text-input>
+                <br />
+                <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('active')" [elementName]="'Active'"
+                    [formControlNm]="'active'"></app-text-input>
+                <br />
+                <div [formGroup]="orgForm.get('contactAddress')">
+                    <label>Contact Address</label>
+                    <app-text-input [formRef]="orgForm.get('contactAddress')"
+                        [elementRef]="orgForm.get('contactAddress').get('address1')" [elementName]="'Address 1'"
+                        [formControlNm]="'address1'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="orgForm.get('contactAddress')"
+                        [elementRef]="orgForm.get('contactAddress').get('address2')" [elementName]="'Address 2'"
+                        [formControlNm]="'address2'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="orgForm.get('contactAddress')"
+                        [elementRef]="orgForm.get('contactAddress').get('city')" [elementName]="'City'"
+                        [formControlNm]="'city'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="orgForm.get('contactAddress')"
+                        [elementRef]="orgForm.get('contactAddress').get('country')" [elementName]="'Country'"
+                        [formControlNm]="'country'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="orgForm.get('contactAddress')"
+                        [elementRef]="orgForm.get('contactAddress').get('state')" [elementName]="'State'"
+                        [formControlNm]="'state'"></app-text-input>
+                    <br />
+                    <app-text-input [formRef]="orgForm.get('contactAddress')"
+                        [elementRef]="orgForm.get('contactAddress').get('zipcode')" [elementName]="'Zip code'"
+                        [formControlNm]="'zipcode'"></app-text-input>
+                    <br />
+                </div>
+                <!-- <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('imei')" [elementName]="'IMEI'" [formControlNm]="'imei'"></app-text-input>
+                            <br />
+                            <app-text-input [formRef]="orgForm" [elementRef]="orgForm.get('phoneNumber')" [elementName]="'Phone Number'" [formControlNm]="'phoneNumber'"></app-text-input>
+                            <br /> -->
+
+                <!-- <br />
+                          <app-upload-file></app-upload-file> -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <!-- <button class="btn btn-danger btn-block">Save</button> -->
+            <input type="submit" class="btn btn-danger btn-block" value="OK">
+            <!-- <input type="button" class="btn btn-danger btn-block" (click)="clear(MyForm);" value="Reset" /> -->
+        </div>
+    </form>
+
+</div>

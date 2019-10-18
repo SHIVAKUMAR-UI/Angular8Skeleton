@@ -1,0 +1,19 @@
+<span *ngIf="formElementReference.errors['required']">
+    {{errorTextName}} required
+</span>
+<span *ngIf="formElementReference.errors['email']">
+    {{errorTextName}} Invalid
+</span>
+<span *ngIf="formElementReference.errors['imei']">
+    {{errorTextName}} Invalid
+</span>
+<span *ngIf="formElementReference.errors['phoneNumber']">
+    {{errorTextName}} Invalid
+</span>
+<span *ngIf="formElementReference.errors['maxlength']">
+    {{errorTextName}} Exceeding Maximum Length
+</span>
+<span
+    *ngIf="formElementReference.errors && formElementReference.errors['pattern'] && !formElementReference.errors['pattern']['actualValue']">
+    {{errorTextName}}
+</span>
