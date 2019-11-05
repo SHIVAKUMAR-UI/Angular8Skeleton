@@ -31,6 +31,6 @@ Download and Run below command (for Oauth Proxy redirection)
 
 $ ng serve --proxy-config proxy.json
 
-This project is to demonstrate the angular concepts, how to utilize the different thirdparty modules and how to implement it in our application. Please ignore the application Style as did not focus on the UI styles.
+This project is to demonstrate the angular concepts, how to utilize the different thirdparty modules and how to implement those in our application. Please ignore the application Style as did not focus on the UI styles.
 
-Explanation on each topic will be available soon... in my blog https://medium.com/@shivakumar.kokkula
+Explanation on each topic will be available soon... on my blog https://medium.com/@shivakumar.kokkula
